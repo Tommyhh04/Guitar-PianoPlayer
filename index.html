@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guitar Player</title>
+    <!--Links to CSS and JS-->
+    <link rel="stylesheet" href="stylePlayer.css" />
+    <script src="Guitar.js" defer></script>
+  </head>
+  <!--This is Guitar Player-->
+  <body class="background-img-guitar">
+    <!--Dropdown menu with simple instructions on how to play-->
+    <!--Container-dropdown to give the element grid properties-->
+    <div class="container-dropdown">
+      <!--class dropdown is to use grid to place the button-->
+      <div class="dropdown">
+        <!--Text box that drops down a window when hovered over-->
+        <button class="dropdown-btn">Instructions</button>
+        <!--Content for the dropdown window-->
+        <p class="dropdown-content">
+          To play: press the 1-6 buttons on your keyboard!
+          <!--Sends the user to the piano player-->
+          <a href="piano.html">Piano?</a>
+        </p>
+      </div>
+    </div>
+    <!--Container for the guitar player card-->
+    <!--container-guitar is to place the guitar player card in the middle-->
+    <div class="container-guitar">
+      <!--Guitar card with background image and playable buttons inside-->
+      <div class="player-guitar">
+        <!--Playable buttons-->
+        <div class="buttons-guitar">
+          <button class="guitar-btn1">1</button>
+          <button class="guitar-btn2">2</button>
+          <button class="guitar-btn3">3</button>
+          <button class="guitar-btn4">4</button>
+          <button class="guitar-btn5">5</button>
+          <button class="guitar-btn6">6</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

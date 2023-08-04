@@ -1,0 +1,155 @@
+/*Background Image*/
+.background-img-guitar {
+  background-image: url("./images/Background-guitar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*Container for the dropdown menu */
+.container-dropdown {
+  display: grid;
+}
+/*Styles and places a instruction menu at the right top corner*/
+.dropdown {
+  grid-row: 1;
+  grid-column: 7;
+  position: relative;
+}
+/*Styles the instruction button*/
+.dropdown-btn {
+  border-radius: 10px;
+  padding: 10px;
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0.077);
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Content for the dropdown menu*/
+.dropdown-content {
+  display: none;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.077);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: white;
+  max-width: 100px;
+}
+/*Gives styling to the link text inside the dropdown window*/
+a {
+  color: rgb(251, 255, 21);
+  font-weight: 700;
+  text-decoration: none;
+}
+a:hover {
+  color: aqua;
+}
+/*CSS FOR GUITAR PLAYER*/
+
+/*Container for the guitar with grid properties to make the card placeable in the middle of the webpage (Also to practice using gird instead of flexbox)*/
+.container-guitar {
+  display: grid;
+}
+
+/*Card with background image for the playable guitar. Also for the playable buttons*/
+.player-guitar {
+  display: grid;
+  grid-row: 2;
+  grid-column: 2;
+  width: 515px;
+  height: 585px;
+  border-radius: 100px;
+  background-image: url("./images/Guitar.jpg");
+  background-size: cover;
+  box-shadow: -8px 8px 5px 5px rgba(66, 66, 66, 0.473);
+}
+/*Places the playable buttons on the guitar strings*/
+.buttons-guitar {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+/*Styles the guitar playable buttons*/
+.guitar-btn1,
+.guitar-btn2,
+.guitar-btn3,
+.guitar-btn4,
+.guitar-btn5,
+.guitar-btn6 {
+  border-radius: 10px;
+  background-color: #ede0d4;
+}
+/*Styles the guitar buttons when hovered over*/
+.guitar-btn1:hover,
+.guitar-btn2:hover,
+.guitar-btn3:hover,
+.guitar-btn4:hover,
+.guitar-btn5:hover,
+.guitar-btn6:hover {
+  background-color: #a79482;
+}
+/*Styles the guitar buttons when active*/
+.guitar-btn1:active,
+.guitar-btn2:active,
+.guitar-btn3:active,
+.guitar-btn4:active,
+.guitar-btn5:active,
+.guitar-btn6:active {
+  background-color: #0dbd16;
+}
+
+/*CSS FOR PIANO PLAYER*/
+
+/*Background image for the body of the page*/
+.background-img-piano {
+  background-image: url("./images/background-piano.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Grid to make it possible to place the piano card in the middle of the screen*/
+.container-piano {
+  display: grid;
+}
+
+/*Styles the card for the piano player*/
+.player-piano {
+  /*display grid for the buttons inside the card*/
+  display: grid;
+  grid-row: 2;
+  grid-column: 2;
+  background-image: url("./images/Piano.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  width: 800px;
+  height: 400px;
+}
+/*Places the piano buttons*/
+.buttons-piano {
+  display: flex;
+  justify-content: space-evenly;
+  grid-row: 6;
+  grid-column: 1;
+  margin-bottom: 10px;
+}
+/*Styles the piano buttons*/
+.piano-btn1,
+.piano-btn2,
+.piano-btn3 {
+  padding: 10px;
+  border-radius: 100px;
+}
+/*Styles the piano buttons when hovering over*/
+.piano-btn1:hover,
+.piano-btn2:hover,
+.piano-btn3:hover {
+  background-color: rgb(185, 185, 185);
+}
+
+.piano-btn1:active,
+.piano-btn2:active,
+.piano-btn3:active {
+  background-color: rgb(89, 200, 255);
+}

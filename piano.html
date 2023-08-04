@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piano Player</title>
+    <link rel="stylesheet" href="stylePlayer.css" />
+    <script src="Piano.js" defer></script>
+  </head>
+  <!--This is piano player-->
+  <body class="background-img-piano">
+    <!--Dropdown menu with simple instructions on how to play-->
+    <!--Container-dropdown to give the element grid properties-->
+    <div class="container-dropdown">
+      <!--class dropdown is to use grid to place the button-->
+      <div class="dropdown">
+        <!--Text box that drops down a window when hovered over-->
+        <button class="dropdown-btn">Instructions</button>
+        <!--Content for the dropdown window-->
+        <p class="dropdown-content">
+          To play: press the 1-3 buttons on your keyboard!
+          <!--Sends the user to the guitar player-->
+          <a href="index.html">Guitar?</a>
+        </p>
+      </div>
+    </div>
+    <!--Container for the piano player card-->
+    <!--container-piano is to be able to place the piano player card in the middle of the screen-->
+    <div class="container-piano">
+      <!--Gives styling and buttons to the piano card-->
+      <div class="player-piano">
+        <!--Playable buttons for the piano-->
+        <div class="buttons-piano">
+          <button class="piano-btn1">1</button>
+          <button class="piano-btn2">2</button>
+          <button class="piano-btn3">3</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
